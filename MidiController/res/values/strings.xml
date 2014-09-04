@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MidiController</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btn_sendProgramChange">Send Program Change</string>
+    <string name="button_send_program_change">Send Program Change</string>
+    <string name="button_send_control_change">Send Control Change</string>
+    <string name="button_tap_tempo">Tap Tempo</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="button_open_midi_activity">Open Midi Activity</string>
+
+</resources>

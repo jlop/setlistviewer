@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <EditText
+        android:id="@+id/edit_midi_progam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="22dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_midi_controller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_midi_progam"
+        android:layout_below="@+id/edit_midi_progam"
+        android:layout_marginTop="72dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/send_program_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_controller_value"
+        android:layout_alignTop="@+id/edit_midi_progam"
+        android:onClick="onSendProgramChangeClick"
+        android:text="@string/button_send_program_change" />
+
+    <Button
+        android:id="@+id/send_control_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edit_controller_value"
+        android:layout_centerHorizontal="true"
+        android:onClick="onSendControlChangeClick"
+        android:text="@string/button_send_control_change" />
+
+    <EditText
+        android:id="@+id/edit_controller_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_midi_controller"
+        android:layout_alignBottom="@+id/edit_midi_controller"
+        android:layout_marginRight="25dp"
+        android:layout_toLeftOf="@+id/send_control_change"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/button_tap_tempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_midi_controller"
+        android:layout_below="@+id/edit_midi_controller"
+        android:layout_marginTop="72dp"
+        android:onClick="onTapTempoClick"
+        android:text="@string/button_tap_tempo" />
+
+</RelativeLayout>
