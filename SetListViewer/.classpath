@@ -6,5 +6,6 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="lib" path="/Applications/Eclipse/adt-bundle-mac-x86_64-20140702/sdk/extras/android/support/v4/android-support-v4.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MIDIDriver"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

@@ -22,6 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MidiActivity"
+            android:label="@string/title_activity_midi" 
+            android:theme="@android:style/Theme.NoDisplay" >
+        </activity>
     </application>
 
 </manifest>
